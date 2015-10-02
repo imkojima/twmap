@@ -1,0 +1,106 @@
+		body {
+			font-size: 12px;
+			margin: 0;
+			overflow: hidden;
+        	overflow-y: auto;
+		}
+
+		.title {
+			font-weight: bold;
+			font-size: 1.9em;
+			padding-bottom: 5px;
+		}
+
+		.category {
+			color: #4F1F8F;
+			font-size: 1.2em;
+			padding-bottom: 5px;
+		}
+
+		.source {
+			font-size: 1.2em;
+			color: #AFAFAF;
+		}
+
+		.axis path,
+		.axis line {
+			fill: none;
+	        stroke: #000;
+	        shape-rendering: crispEdges;
+	    }
+
+	    .x.axis path {
+	        display: block;
+	    }
+
+	    .card {
+	    	text-align: left;
+	    	min-width: 286px;
+	    	width:290px;
+	    }
+	    .content {
+	    	text-align:center;
+	    }
+
+		.tooltip {
+			min-width:100px;
+		}
+
+		#tooltip {
+			position: absolute;
+			width: 100px;
+			height: auto;
+			padding: 10px;
+			background-color: white;
+			-webkit-border-radius: 10px;
+			-moz-border-radius: 10px;
+			border-radius: 10px;
+			-webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+			-moz-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+			box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+			pointer-events: none;
+		}
+
+		#tooltip.hidden {
+			display: none;
+		}
+
+		#tooltip p {
+			margin: 0;
+			font-family: sans-serif;
+			font-size: 12px;
+			line-height: 14px;
+			text-align: center;
+		}
+
+		@media only screen and (max-width :768px) {
+			    section {
+			    	text-align: center;
+			    	width: 100%;
+			    }
+
+			    section > * {
+			    	margin: 6px 2px;
+			    }
+		}
+
+		/* iPhone 45 */
+		@media only screen 
+		and (min-device-width : 320px) 
+		and (max-device-width : 568px) {
+			.card {
+				padding: 8px;
+				min-width: 290px;
+			}
+		}
+
+
+		/* iPhone 6 */
+		@media only screen 
+		and (min-device-width : 375px) 
+		and (max-device-width : 667px) {
+			.card {
+				padding: 16px;
+				min-width: 330px;
+			}
+		}
